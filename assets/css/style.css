@@ -81,6 +81,11 @@ button:focus {
 	z-index: 1;
 	position: relative
 }
+
+.common-btn-2{
+  color: #01133a;
+	background-color: #ffffff;
+}
 .common-btn .one:before {
 	position: absolute;
 	content: '';
@@ -195,11 +200,11 @@ button:focus {
 	padding-top: 10px;
 	padding-bottom: 10px
 }
-.header-area .left a {
+/* .header-area .left a {
 	display: block
-}
+} */
 .header-area .right {
-	text-align: end
+	text-align: start;
 }
 .header-area .right ul {
 	margin: 0;
@@ -261,16 +266,16 @@ button:focus {
 	font-size: 13px
 }
 
-.header-area .left ul li:hover i {
+/* .header-area .left ul li:hover i {
 	color: #fff;
 	background-color: #01133a
-}
+} */
 
 
 .logo img {    max-width: 150px;
 }
 
-.header-area .left ul li a {
+/* .header-area .left ul li a {
     display: block;
     color: #35405c;
     font-size: 19px;
@@ -309,7 +314,7 @@ button:focus {
 .header-area .left ul li i.flaticon-placeholder:before {
 	left: 2px;
 	position: relative
-}
+} */
 .main-nav {
 	background-color: #01133a;
 	-webkit-transition: .5s;
@@ -1439,7 +1444,7 @@ button:focus {
 	color: #fff
 }
 .banner-bg-two {
-	background-image: url("../images/banner/main2.jpg")
+	background-image: url("../img/banner/gam_3.jpeg")
 }
 .banner-bg-three {
 	background-image: url("../images/banner/main3.jpg")
@@ -1448,8 +1453,8 @@ button:focus {
 	background-image: url("../images/banner/main4.jpg")
 }
 .banner-area.two .banner-item:before {
-	background: -webkit-gradient(linear, left top, right top, color-stop(36%, rgba(255, 255, 255, 0.816969)), color-stop(61%, rgba(255, 255, 255, 0)));
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0.816969) 36%, rgba(255, 255, 255, 0) 61%);
+	/* background: -webkit-gradient(linear, left top, right top, color-stop(36%, rgba(255, 255, 255, 0.816969)), color-stop(61%, rgba(255, 255, 255, 0)));
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.816969) 36%, rgba(255, 255, 255, 0) 61%); */
 	opacity: 1
 }
 .banner-area.two .banner-content {
@@ -1780,8 +1785,8 @@ img.mfp-img {
 .features-item {
 	margin-bottom: 30px;
 	border-radius: 10px;
-	padding: 30px 30px 25px;
-	background-color: #7adfed;
+	padding: 30px 10px;
+	background-color: white;
 	position: relative;
 	-webkit-transition: .5s;
 	transition: .5s
@@ -1815,7 +1820,7 @@ img.mfp-img {
 	border-radius: 5px
 }
 .features-item h3 {
-	font-size: 22px;
+	font-size: 18px;
 	margin-bottom: 15px
 }
 .features-item h3 a {
@@ -1825,7 +1830,7 @@ img.mfp-img {
 	letter-spacing: 1px
 }
 .features-item p {
-	margin-bottom: 13px
+	margin-bottom: 12px
 }
 .features-item .features-btn {
 	font-weight: 600;
@@ -2084,6 +2089,21 @@ img.mfp-img {
 	color: #fff;
 	background-color: #01133a
 }
+.features-area{
+  background-color: #02123a;
+}
+
+.features-area .section-title .top-title{
+  color: grey;
+}
+
+.features-area .section-title .sub-title{
+  color: #13c2e0;
+}
+.features-area .section-title h2{
+  color: rgb(255, 255, 255);
+}
+
 .services-area.three {
 	background-color: #02123a
 }
