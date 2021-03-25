@@ -1561,6 +1561,57 @@ button:focus {
 	max-width: 100%;
 	margin-top: 0
 }
+
+.enfermedades-container{
+  margin: 60px 40px;
+  box-shadow: 0px 9px 18px 13px rgba(0,0,0,0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.descriptive-enfermedad{
+  display: flex;
+  justify-content: space-between;
+}
+
+.descriptive-enfermedad-container{
+  margin-bottom: 50px;
+}
+
+.descriptive-enfermedad .number-enfermedad{
+  min-width: 50px ;
+  height: 50px;
+  background-color: rgba(19, 194, 224,0.3);
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.descriptive-enfermedad .details-enfermedad{
+  width: 100%;
+}
+
+.descriptive-enfermedad .details-enfermedad div:nth-of-type(2) span{
+  height: 4px;
+  width: 13px;
+  background-color: red;
+  display: block;
+}
+
+.enfermedades-img-container{
+  display: flex;
+  justify-content: center;
+}
+
+.enfermedades-img-container img{
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  /* margin: 0 auto; */
+}
+
 .counter-area {
 	background-image: url("../images/consultation-bg.jpg");
 	background-size: cover;
@@ -1782,7 +1833,34 @@ img.mfp-img {
 .client-area .top-img span {
 	display: block
 }
+
+.service-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.features-item-bg{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: -190px;
+  display: flex;
+  justify-content: center;
+}
+
+.features-item-bg img{
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 .features-item {
+  cursor: pointer;
+  height: 100%;
+  width: 90%;
 	margin-bottom: 30px;
 	border-radius: 10px;
 	padding: 30px 10px;
@@ -1794,7 +1872,7 @@ img.mfp-img {
 .features-item:hover {
 	-webkit-transform: translate(0, -5px);
 	transform: translate(0, -5px);
-	background-color: #e1f4fa
+	/* background-color: #808283 */
 }
 .features-item:hover .features-btn {
 	color: #01133a
@@ -1809,7 +1887,7 @@ img.mfp-img {
 }
 .features-item i {
 	display: inline-block;
-	width: 90px;
+	width: 90%;
 	height: 90px;
 	text-align: center;
 	line-height: 90px;
