@@ -271,7 +271,6 @@ button:focus {
 	background-color: #01133a
 } */
 
-
 .logo img {    max-width: 150px;
 }
 
@@ -628,10 +627,13 @@ button:focus {
 	opacity: .1
 }
 .banner-content {
+  text-align: center;
 	position: relative;
 	z-index: 1;
 	max-width: 675px;
-	margin-top: 70px
+	margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .banner-content .title {
 	font-size: 20px;
@@ -659,6 +661,10 @@ button:focus {
 	animation-name: fadeInRight;
 	-webkit-animation-delay: .5s;
 	animation-delay: .5s
+}
+
+.banner-content .common-btn{
+  margin-bottom: 20px;
 }
 .about-area {
 	background-color: #ecf7f9;
@@ -1444,7 +1450,7 @@ button:focus {
 	color: #fff
 }
 .banner-bg-two {
-	background-image: url("../img/banner/gam_3.jpeg")
+	background-image: url("../img/banner/gam_3.jpg")
 }
 .banner-bg-three {
 	background-image: url("../images/banner/main3.jpg")
@@ -1453,9 +1459,9 @@ button:focus {
 	background-image: url("../images/banner/main4.jpg")
 }
 .banner-area.two .banner-item:before {
-	/* background: -webkit-gradient(linear, left top, right top, color-stop(36%, rgba(255, 255, 255, 0.816969)), color-stop(61%, rgba(255, 255, 255, 0)));
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0.816969) 36%, rgba(255, 255, 255, 0) 61%); */
-	opacity: 1
+	/* background: -webkit-gradient(linear, left top, right top, color-stop(36%, rgba(255, 255, 255, 0.816969)), color-stop(61%, rgba(255, 255, 255, 0))); */
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.816969) 36%, rgba(255, 255, 255, 0) 61%);
+	opacity: 0.2
 }
 .banner-area.two .banner-content {
 	max-width: 720px
@@ -1572,6 +1578,7 @@ button:focus {
 .descriptive-enfermedad{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .descriptive-enfermedad-container{
@@ -1579,25 +1586,38 @@ button:focus {
 }
 
 .descriptive-enfermedad .number-enfermedad{
-  min-width: 50px ;
-  height: 50px;
+  min-width: 40px ;
+  height: 40px;
   background-color: rgba(19, 194, 224,0.3);
   margin-right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  font-weight: bold;
 }
 
 .descriptive-enfermedad .details-enfermedad{
   width: 100%;
 }
 
-.descriptive-enfermedad .details-enfermedad div:nth-of-type(2) span{
-  height: 4px;
+.nombre-enfermedad-frecuente{
+  font-weight: bold;
+}
+
+.descriptive-enfermedad .details-enfermedad div:nth-of-type(2) button{
+  height: 14px;
   width: 13px;
-  background-color: red;
+  background-color: transparent;
   display: block;
+  cursor: pointer;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.descriptive-enfermedad p{
+  margin-bottom: 0;
 }
 
 .enfermedades-img-container{
@@ -1606,10 +1626,9 @@ button:focus {
 }
 
 .enfermedades-img-container img{
-  width: 80%;
-  height: 300px;
+  width: 350px;
+  height: 250px;
   object-fit: cover;
-  /* margin: 0 auto; */
 }
 
 .counter-area {
@@ -1860,14 +1879,15 @@ img.mfp-img {
 .features-item {
   cursor: pointer;
   height: 100%;
-  width: 90%;
+  width: 85%;
 	margin-bottom: 30px;
 	border-radius: 10px;
 	padding: 30px 10px;
 	background-color: white;
 	position: relative;
 	-webkit-transition: .5s;
-	transition: .5s
+	transition: .5s;
+  overflow: hidden;
 }
 .features-item:hover {
 	-webkit-transform: translate(0, -5px);
@@ -1885,17 +1905,13 @@ img.mfp-img {
 	top: 30px;
 	right: 30px
 }
-.features-item i {
-	display: inline-block;
-	width: 90%;
-	height: 90px;
-	text-align: center;
-	line-height: 90px;
-	font-size: 35px;
-	color: #01133a;
+.features-item img {
+	display: block;
+	width: 50px;
+	height: 50px;
 	background-color: #fff;
-	margin-bottom: 22px;
-	border-radius: 5px
+  margin: 0 auto;
+
 }
 .features-item h3 {
 	font-size: 18px;
@@ -1908,7 +1924,8 @@ img.mfp-img {
 	letter-spacing: 1px
 }
 .features-item p {
-	margin-bottom: 12px
+	margin-bottom: 12px;
+  line-height: 18px;
 }
 .features-item .features-btn {
 	font-weight: 600;
