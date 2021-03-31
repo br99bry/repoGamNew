@@ -278,6 +278,9 @@ a.meanmenu-reveal {
 	left: auto;
 	right: 0
 }
+
+
+
 @media only screen and (max-width: 991px) {
 	.mobile-nav {
 		display: block;
