@@ -1,0 +1,17 @@
+.DiseasesFrecuently{
+  margin-top: 105px;
+  /* border: 1px solid red; */
+}
+
+.DiseasesFrecuently__card-container{
+  margin-bottom: 100px;
+}
+
+.DiseasesFrecuently__card .services-item{
+  height: 100%;
+}
+
+.DiseasesFrecuently__card .services-item .bottom{
+  height: 100%;
+}
+
